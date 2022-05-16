@@ -78,7 +78,7 @@ public:
             propogate(2*node+1, M+1, R);
         }
         Update(2*node, L, M, lo, hi, val);
-        Update(2*node, M+1, R, lo, hi, val);
+        Update(2*node+1, M+1, R, lo, hi, val);
         merge(st[node], st[2*node], st[2*node+1]);
     }
 
