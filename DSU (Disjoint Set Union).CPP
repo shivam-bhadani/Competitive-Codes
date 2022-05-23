@@ -1,4 +1,4 @@
-class DSU 
+class DSU
 {
 private:
     vector<int> parent, size;
@@ -30,5 +30,9 @@ public:
             parent[pv] = pu;
             size[pu]+=size[pv];
         }
+    }
+    int siz(int n) {
+        int p = getPar(n);
+        return size[p];
     }
 };
