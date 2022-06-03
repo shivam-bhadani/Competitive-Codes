@@ -28,7 +28,7 @@ public:
 	}
 
 	void build(vector<ll>& a) {
-		for(int i=0; i<a.size(); i++) {
+		for(int i=0; i<n; i++) {
 			table[i][0] = a[i];
 		}
 		for(int j=1; j<=mxLog; j++) {
