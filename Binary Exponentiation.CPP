@@ -1,4 +1,4 @@
-// Time - O(log(n)) a, b <= 1e9
+// Time - O(log(n)) a <= 1e9
 
 ll expo(ll a, ll b, ll m) {
 	ll res = 1;
@@ -11,7 +11,7 @@ ll expo(ll a, ll b, ll m) {
 	return res;
 }
 
-// Time - O(log^2(n)) Use this for very large inputs
+// Time - O(log^2(n)) Use this for very large input of a
 
 ll binMultiply(ll a, ll b, ll m) {
 	ll ans = 0;
